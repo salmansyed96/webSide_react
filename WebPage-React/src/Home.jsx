@@ -1,11 +1,21 @@
-
+//import { useEffect } from "react";
+import HeroSection from "./Component/HeroSection";
+//import { useGlobalContext } from "./Context";
+import Services from "./Services";
+import Contact from "./Contact";
 
 const Home = () => {
-  return (
-    <div>
-      Home
-    </div>
-  )
-}
+ // const { updateHomePage } = useGlobalContext();
 
-export default Home
+ // useEffect(() => updateHomePage(), );
+
+  return (
+    <>
+      <HeroSection />
+      <Services />
+      <Contact />
+    </>
+  );
+};
+
+export default Home;
